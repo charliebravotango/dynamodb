@@ -12,7 +12,6 @@ namespace DynamoDB
 
         public Product()
         {
-
             mProductID = random.Next(1000, Int32.MaxValue);
         } // constructor
 

@@ -94,7 +94,7 @@ namespace DynamoDB
 
             #region Find the blue products
             string colour = "Blue";
-            Console.Write("Scan for the '{colour}' products...");
+            Console.Write($"Scan for the '{colour}' products...");
             ComparisonOperator @operator = ComparisonOperator.EQ;
             ScanFilter filter = new ScanFilter();
             filter.AddCondition("Colour", ScanOperator.Equal, new DynamoDBEntry[] { colour });
@@ -123,6 +123,6 @@ namespace DynamoDB
         {
             Console.WriteLine("Hit ENTER to continue");
             Console.ReadLine();
-        }
+        } // HitENTERtoContinue method
     } // Program class
 } // namespace
